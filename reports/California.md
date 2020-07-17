@@ -355,6 +355,20 @@ id: ca-los-angeles-20
 * https://www.reddit.com/r/longbeach/comments/gyma59/lakewoods_peaceful_protest_ends_in_cops_shooting/?utm_source=share&utm_medium=web2x
 
 
+### Test from Mac | July 15th
+
+This can be a description
+
+tags: abc, 123
+
+id: ca-losangeles-25
+
+**Links**
+
+* https://www.google.com
+* https://www.twitter.com
+
+
 ## Oakland
 
 ### Officer runs down protesters with police cruiser | (believed to be) May 30th
