@@ -1,12 +1,14 @@
 ## Charleston
 
-### Police Individually Target Peaceful Protester and Arrest Him | May 31st
+### Police Individually Target Peaceful Protester and Arrest Him | 2020-05-31
 
 A man in Charleston peacefully leading a protest is suddenly singled out, brought behind the police force's line, and arrested without explanation.
 
 tags: arrest, protester
 
 id: sc-charleston-1
+
+geolocation: 32.7869083, -79.9357083
 
 **Links**
 
@@ -16,30 +18,34 @@ id: sc-charleston-1
 * https://twitter.com/greg_doucette/status/1267423284179742721
 
 
-### APC collides with bystander car | May 31st
+### APC collides with bystander car | 2020-05-31
 
-News footage shows a civilian car after a collision with a police APC. The driver states that she was hit while driving through a green light by an APC without sirens.
+News footage shows a civilian car after a collision with a police APC at Vanderhorst and Coming Streets. The driver states that she was hit while driving through a green light by an APC without sirens.
 
-tags: drive, vehicle, property-destruction, bystander
+tags: bystander, drive, property-destruction, vehicle
 
 id: sc-charleston-2
+
+geolocation: 32.7864776, -79.9403569
 
 **Links**
 
 * https://twitter.com/greg_doucette/status/1267228530368229376
 
 
-### Police violently arrest protester | June 22nd
+### Police violently arrest protester | 2020-06-22
 
-A protest and counter-protest between BLM supporters and statue supporters. Groups shouted at one another but stayed separate. After the protest, BLM supporters marched down the street followed by police.
+A protest and counter-protest occurred on June 22nd between BLM supporters and statue supporters at the John C. Calhoun Monument in Marion Square. Groups shouted at one another but stayed separate. After the protest, BLM supporters marched down the street followed by police.
 
 Footage shows violence during the arrest of a protester as 3 police officers wearing hoods that resemble balaclavas. They tackle the protester to the ground. One officer then kneels on his back to make the arrest. A fourth officer in a patrol uniform comes to assist. The man is seen bleeding from the face. The masked officers do not appear to be wearing badges.
 
 Police charged him with disobeying a lawful order and resisting arrest.
 
-tags: arrest, shove, strike, beat, tackle, hide-badge, protester
+tags: arrest, beat, hide-badge, protester, shove, strike, tackle
 
 id: sc-charleston-3
+
+geolocation: 32.7867424, -79.9378098
 
 **Links**
 

@@ -1,8 +1,8 @@
 ## Chattanooga
 
-### Sheriffs tear gas crowd after accidental vandalism | May 31st
+### Sheriffs tear gas crowd after accidental vandalism | 2020-05-31
 
-Footage from the first link shows two protesters attempting to remove a sign strung between two lampposts on a mezzanine. The lampposts fall over during this process. Then at 00:40, officers rush out of the building, seizing protesters.
+Footage from the first link shows two protesters attempting to remove a sign strung between two lampposts on the County Courthouse mezzanine. The lampposts fall over during this process. Then at 00:40, officers rush out of the building, seizing protesters.
 
 The second clip shows officers with rifles making arrests on the mezzanine. Officers then pull what appear to be service pistols and point them at protesters. More officers step out of the building onto the mezzanine and take the staircase. Protesters and police face each other at the foot of the stairs. Protesters begin chanting.
 
@@ -12,9 +12,11 @@ The fourth clip shows protesters attempt to recover their belongings while polic
 
 An article from the Chattanoogan states Sheriffs threw the tear gas, not Chattanooga police.
 
-tags: protester, tear-gas, arrest
+tags: arrest, less-lethal, protester, tear-gas
 
 id: tn-chattanooga-1
+
+geolocation: 35.0494539, -85.3064104
 
 **Links**
 
@@ -27,13 +29,15 @@ id: tn-chattanooga-1
 
 ## Memphis
 
-### Police swarm a woman without provocation | May 31st
+### Police swarm a woman without provocation | 2020-05-31
 
-A group of police officers targeted and swarmed a woman and pushed her to the ground, using excessive force.
+A group of police officers targeted and swarmed a woman at Beale and Main Streets and pushed her to the ground, using excessive force.
 
-tags: beat, arrest, shield, baton, strike, shove, protester
+tags: arrest, baton, beat, protester, shield, shove, strike
 
 id: tn-memphis-1
+
+geolocation: 35.1403161, -90.0547568
 
 **Links**
 
@@ -42,13 +46,15 @@ id: tn-memphis-1
 
 ## Murfreesboro
 
-### Police tear gas peaceful protesters | May 31st
+### Police tear gas peaceful protesters | 2020-05-31
 
 Police fire tear gas at a small group of peaceful protesters by the entrance to MTSU in Murfree. Police claim protesters were blocking traffic, which additional footage supports. However, the video in question shows continual deployment of tear gas after protesters moved off the road.
 
-tags: tear-gas, protester
+tags: less-lethal, protester, tear-gas
 
 id: tn-murfreesboro-1
+
+geolocation: 35.8482336, -86.3535392
 
 **Links**
 
@@ -59,13 +65,15 @@ id: tn-murfreesboro-1
 
 ## Nashville
 
-### Police confiscate protester supplies | June 23rd
+### Police confiscate protester supplies | 2020-06-23
 
 Police shut down a protester station on Capitol Hill in Nashville, confiscating food, water, medical supplies, personal belongings and signs. Caption states that police shoved protesters trying to keep hold of their belongings.
 
-tags: property-destruction, abuse-of-power, threaten, protester
+tags: abuse-of-power, property-destruction, protester, threaten
 
 id: tn-nashville-1
+
+geolocation: 36.1650698, -86.7836512
 
 **Links**
 
@@ -73,13 +81,15 @@ id: tn-nashville-1
 * https://twitter.com/brotherjones_/status/1275539159030140929
 
 
-### Police confiscate protester supplies | June 25th
+### Police confiscate protester supplies | 2020-06-25
 
 In an early morning raid, Nashville police confiscated water, food and other supplies shared among protesters. In addition, officers harassed resting protesters, threatening to take their belongings and arrest them.
 
-tags: property-destruction, abuse-of-power, threaten, protester
+tags: abuse-of-power, property-destruction, protester, threaten
 
 id: tn-nashville-2
+
+geolocation: 36.1650698, -86.7836512
 
 **Links**
 
@@ -87,7 +97,7 @@ id: tn-nashville-2
 * https://twitter.com/brotherjones_/status/1276139027612291073
 
 
-### Police target activist leader | June 26th
+### Police target activist leader | 2020-06-26
 
 Justin Jones, a prominent activist in Nashville, was arrested on June 26th for taking a step too far on public property. Officers states at that point he was considered trespassing.
 
@@ -95,9 +105,11 @@ He states he was charged with "criminal trespassing" and "inciting a riot," alth
 
 Protesters believe Jones was targeted because of his prominence in the protests.
 
-tags: arrest, abuse-of-power, protester
+tags: abuse-of-power, arrest, protester
 
 id: tn-nashville-3
+
+geolocation: 36.1650698, -86.7836512
 
 **Links**
 
@@ -107,15 +119,17 @@ id: tn-nashville-3
 * https://imgur.com/a/ULAxpXi
 
 
-### Police arrest protesters on questionable charges, harm protesters with zip ties | June 29th
+### Police arrest protesters on questionable charges, harm protesters with zip ties | 2020-06-29
 
 Justin Jones, a prominent activist in Nashville, states that protesters were arrested around 6:30 AM on June 29th and charged with "camping on state property." Protesters had no intention of camping.
 
 He also shows footage of extremely tight zip-ties, stating that an arrestee has suffered ongoing numbness in their hands since release.
 
-tags: arrest, abuse-of-power, protester, zip-tie
+tags: abuse-of-power, arrest, protester, zip-tie
 
 id: tn-nashville-4
+
+geolocation: 36.1650698, -86.7836512
 
 **Links**
 
@@ -123,26 +137,30 @@ id: tn-nashville-4
 * https://twitter.com/brotherjones_/status/1277694340534546433
 
 
-### Police drag protesters down Capitol steps | July 4th
+### Police drag protesters down Capitol steps | 2020-07-04
 
 In footage provided by a prominent Nashville activist, state troopers drag protesters down the steps of the Capitol building. Many troopers can be seen kneeling on protesters, both on the flat pavement and on the steps.
 
-tags: arrest, protester, knee
+tags: arrest, knee, protester
 
 id: tn-nashville-5
+
+geolocation: 36.1650698, -86.7836512
 
 **Links**
 
 * https://twitter.com/brotherjones_/status/1280211300082122758
 
 
-### Protesters shoved down stairs and arrested | July 31st
+### Protesters shoved down stairs and arrested | 2020-07-31
 
 After being ordered to leave Capitol Hill Plaza, protesters leaving the plaza were shoved down stairs and subsequently arrested.
 
-tags: push, shove, arrest, protester
+tags: arrest, protester, push, shove
 
 id: tn-nashville-6
+
+geolocation: 36.1650698, -86.7836512
 
 **Links**
 

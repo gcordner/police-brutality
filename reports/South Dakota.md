@@ -1,6 +1,6 @@
 ## Keystone
 
-### Native protesters shot at and arrested on native land | July 3rd
+### Native protesters shot at and arrested on native land | 2020-07-03
 
 Native protesters in Keystone, South Dakota blocked a highway in anticipation of a Trump rally. Though blocking a highway is indeed illegal, the highway is also on unceded Indigenous land.
 
@@ -8,9 +8,11 @@ Around 2:07:00, the police and National Guard line advances with shields. Protes
 
 News reports additionally state that pepper spray and tear gas were used. The tear gas was deployed by the Pennington County Sheriff's Office.
 
-tags: arrest, tear-gas, pepper-spray, spray, shoot, pepper-ball, protester
+tags: arrest, less-lethal, pepper-ball, pepper-spray, protester, shoot, spray, tear-gas
 
 id: sd-keystone-1
+
+geolocation: 43.8873015, -103.4348387
 
 **Links**
 

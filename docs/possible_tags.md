@@ -7,6 +7,7 @@ baton
 beanbag
 beat
 bike
+boat
 body-cam
 bystander
 celebrity
@@ -31,6 +32,7 @@ kick
 knee
 knee-on-neck
 legal-observer
+less-lethal
 lgbtq+
 live-round
 lrad
@@ -51,11 +53,14 @@ punch
 push
 racial-profiling
 rubber-bullet
+sexual-assault
 shield
 shoot
 shove
+sponge-round
 spray
 strike
+strobe
 stun-grenade
 tackle
 tase
@@ -88,6 +93,7 @@ politician
 pregnant
 protester
 racial-profiling
+sexual-assault
 ```
 
 ### Weapon
@@ -96,6 +102,7 @@ racial-profiling
 baton
 bean-bag
 bike
+boat
 dog
 explosive
 foam-bullet
@@ -104,6 +111,7 @@ headlock
 horse
 kick
 knee-on-neck
+less-lethal
 live-round
 lrad
 mace
@@ -116,6 +124,8 @@ projectile
 punch
 rubber-bullet
 shield
+sponge-round
+strobe
 stun-grenade
 taser
 tear-gas

@@ -33,29 +33,42 @@ url_regex = re.compile(
     r"(http|ftp|https):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))" r"([\w\-\.,@?^=%&amp;:/~\+#\!]*[\w\-\@?^=%&amp;/~\+#\!])?"
 )
 
-
-def title_to_name_date(line):
-    parts = line.split("|")
-    name = parts[0].strip()
-    if len(parts) == 1:
-        print(f"Failed date parse: missing date for {line}")
-        return line.strip(), "", ""
-    if len(name) == 0:
-        print(f"Failed name parse: missing name for {line}")
-    date_text = parts[1].strip()
-
-    try:
-        date_found = date_regex.search(date_text).group()
-        date = parse(date_found).strftime("%Y-%m-%d")
-    except (ValueError, AttributeError) as err:
-        print(f"Failed date format parse for title '{name}' and date '{date_text}': {err}")
-        date = ""
-    return name, date, date_text
+# Regex is used to ensure that lat/long is both in a valid format has has 6-7 decimal places (or is an exact 90/180) to improve data quality on the backend
+LAT_REGEX = re.compile(r"^\(?([-+]?(?:[1-8]?\d(?:\.\d{5,7})|90(?:\.0+)?)),")
+LONG_REGEX = re.compile(r".*,\s*([-+]?(?:180(?:\.0+)?|(?:(?:1[0-7]\d)|(?:[1-9]?\d))(?:\.\d{5,7})))\)?$")
 
 
 def critical_exit(msg):
     print(f"---CRITICAL FAILURE {msg}")
     exit(2)
+
+
+def title_to_name_date(line):
+    parts = line.split("|")
+    if len(parts) != 2:
+        raise ValueError(f"Failed title_to_name_date. Expected 2 parts, separated by '|'. Got: {line}")
+
+    name = parts[0].strip()
+    if len(name) == 0:
+        raise ValueError(f"Failed name parse: missing name for {line}")
+
+    date_text = parts[1].strip()
+
+    if date_text in ("Date Unknown", "Unknown Date"):
+        return name, "", "Unknown Date"
+
+    date_search = date_regex.search(date_text)
+    date_found = date_text.lower().replace("(believed to be)", "").strip()
+    if date_search:
+        date_found = date_search.group()
+        if "202" not in date_text:
+            date_found += ", 2020"
+
+    date = parse(date_found).strftime("%Y-%m-%d")
+    new_date_text = date
+    if "believed" in date_text.lower():
+        new_date_text = f"(Believed to be) {date}"
+    return name, date, new_date_text
 
 
 def read_all_md_files(base_dir):
@@ -88,40 +101,61 @@ def find_md_link_or_url(text):
     open_curve = (3,)
     closed_curve = (4,)
     state = start
-    text_text = ""
+    text_content = ""
     link_url = ""
     for ch in text:
         if state == start:
             if ch == "[":
                 state = open_sq
             else:
-                text_text += ch
+                text_content += ch
         elif state == open_sq:
             if ch == "]":
                 state = closed_sq
             else:
-                text_text += ch
+                text_content += ch
         elif state == closed_sq:
             if ch == "(":
                 state = open_curve
+            else:
+                text_content += ch
         elif state == open_curve:
             if ch == ")":
-                state == closed_curve
+                state = closed_curve
             else:
                 link_url += ch
         elif state == closed_curve:
-            text_text += ch
+            text_content += ch
 
     if len(link_url) == 0:
         # no markdown link found, consider it all one url
-        link_url = text_text
-        text_text = ""
+        link_url = text_content
+        text_content = ""
 
-    return text_text.strip(), link_url.strip()
+    return text_content.strip(), link_url.strip()
+
+
+def _format_lat_or_long(val: str) -> None:
+    return val.strip("+")
+
+
+def validate_geo(geo_body_raw: str) -> str:
+    geo_body = geo_body_raw.strip()
+    if geo_body == "":
+        return ""
+
+    try:
+        parsed_lat = _format_lat_or_long(LAT_REGEX.match(geo_body).group(1))
+        parsed_long = _format_lat_or_long(LONG_REGEX.match(geo_body).group(1))
+        if not parsed_lat and not parsed_long:
+            raise ValueError(f"Could not parse geolocation: {geo_body}")
+        return f"{parsed_lat}, {parsed_long}"
+    except AttributeError:
+        raise ValueError(f"Could not parse geolocation: {geo_body}")
 
 
 def parse_state(state, text):
-    source_link = f"https://github.com/2020PB/police-brutality/blob/master/reports/{state}.md"
+    source_link = f"https://github.com/2020PB/police-brutality/blob/main/reports/{state}.md"
     city = ""
     if state == "Washington DC":
         city = "DC"
@@ -136,6 +170,7 @@ def parse_state(state, text):
         "city": city,
         "description": "",
         "tags": [],
+        "geolocation": "",
     }
     entry = copy.deepcopy(clean_entry)
 
@@ -180,7 +215,10 @@ def parse_state(state, text):
             if link_url:
                 entry["links"].append(link_url)
                 entry["links_v2"].append(
-                    {"url": link_url, "text": link_text,}
+                    {
+                        "url": link_url,
+                        "text": link_text,
+                    }
                 )
             else:
                 print("Data build failed, exiting")
@@ -192,11 +230,15 @@ def parse_state(state, text):
             # Text without a markdown marker, this might be the description or metadata
             id_prefix = "id:"
             tags_prefix = "tags:"
+            lat_long_prefix = "geolocation:"
             if line.startswith(id_prefix):
                 entry["id"] = line[len(id_prefix) :].strip()
             elif line.startswith(tags_prefix):
                 spacey_tags = line[len(tags_prefix) :].split(",")
                 entry["tags"] = [tag.strip() for tag in spacey_tags]
+            elif line.startswith(lat_long_prefix):
+                entry["geolocation"] = validate_geo(line[len(lat_long_prefix) :].lstrip())
+                pass
             else:
                 # Add a line to the description, but make sure there are no extra
                 # new lines surrounding it.
@@ -209,7 +251,7 @@ def parse_state(state, text):
     if entry and entry["links"]:
         yield finalize_entry(entry)
     else:
-        print(f"Failed links parse: missing links for {entry}")
+        raise ValueError(f"Failed links parse: missing links for {entry}")
 
 
 def process_md_texts(md_texts):
@@ -307,18 +349,16 @@ readme_text = """
 
 This repository exists to accumulate and contextualize evidence of police brutality during the 2020 George Floyd protests.
 
-Our goal in doing this is to assist journalists, politicians, prosecutors, activists and concerned citizens who can use the evidence accumulated here for political campaigns, news reporting, public education and prosecution of criminal police officers.
+Our goal in doing this is to assist journalists, politicians, prosecutors, activists and concerned individuals who can use the evidence accumulated here for political campaigns, news reporting, public education and prosecution of criminal police officers.
 
 * This branch is just the files generated by parsing the markdown for ease of building other sites.
 * For example your webapp can query and display data from https://raw.githubusercontent.com/2020PB/police-brutality/data_build/all-locations.json
 * For more info see https://github.com/2020PB/police-brutality
-* These data files are generated by https://github.com/2020PB/police-brutality/tree/master/tools
+* These data files are generated by https://github.com/2020PB/police-brutality/tree/main/tools
 
 # THESE FILES ARE GENERATED - DO NOT EDIT (including this readme)
 
-# THESE FILES ARE GENERATED - DO NOT EDIT (including this readme)
-
-* Please edit the `.md` files on the `master` branch at https://github.com/2020PB/police-brutality
+* Please edit the `.md` files on the `main` branch at https://github.com/2020PB/police-brutality
 * Also notice each data row has a `edit_at` link so you can find the source data for every entry.
 
 """

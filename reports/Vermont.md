@@ -1,12 +1,14 @@
 ## St. Johnsbury
 
-### Police shove a protesting woman down a set of concrete steps. | June 3rd
+### Police shove a protesting woman down a set of concrete steps. | 2020-06-03
 
 Police shove a protesting woman down a set of concrete steps.
 
-tags: shove, arrest, push, protester
+tags: arrest, protester, push, shove
 
 id: vt-stjohnsbury-1
+
+geolocation: 44.4226883, -72.0071364
 
 **Links**
 

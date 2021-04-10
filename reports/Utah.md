@@ -1,14 +1,16 @@
 ## Cottonwood Heights
 
-### Police beat and pepper spray protesters during violent arrests | August 2nd
+### Police beat and pepper spray protesters during violent arrests | 2020-08-02
 
 During a protest on August 2nd over Zane James who was killed by police a few years ago, police blocked off a residential road, down which protesters were travelling. Police then ordered protesters to the sidewalk. It is difficult to ascertain how the scuffle began; both protesters and police place the blame on the other. It appears that one officer and one protester got into a verbal altercation, after which the two go to the ground, grappling. The officer ends up holding the protester down, but it is difficult to determine how the incident began. This protester was apparently the father of Zane James. After this, protesters and police both became agitated and the scuffle escalated.
 
 Police made 9 arrests, including the father of Zane James. Police beat multiple protesters with batons and pepper sprayed others. A Cottonwood Heights city councilwoman stated she was struck by police. Police state that one officer was choked to the point of unconsciousness and another was hospitalized. In addition, police state protesters used a water gun filled with "pepper and bodily fluids;" protesters state they were full of water in order to keep cool. A news report also states that some protesters were tased.
 
-tags: arrest, protester, beat, strike, pepper-spray, spray, tackle, taser, tase
+tags: arrest, beat, less-lethal, pepper-spray, protester, spray, strike, tackle, tase, taser
 
 id: ut-cottonwoodheights-1
+
+geolocation: 40.6292192, -111.8216915
 
 **Links**
 
@@ -23,39 +25,49 @@ id: ut-cottonwoodheights-1
 
 ## Salt Lake City
 
-### Police shove an old man with a cane to the ground | May 30th
+### Police shove an old man with a cane to the ground | 2020-05-30
 
-The old man was shoved and pushed by the police, which led him to hit the railing and collapse.
+A man was waiting for a bus at Library Station on the South side of University Boulevard. He was approached by two officers, one of whom shoved him repeatedly, knocking him into a nearby railing.
 
-tags: elderly, push, shove, shield, bystander
+An internal investigation has been opened by the Salt Lake City Police, and the officer has since been relieved of patrol duties.
+
+tags: bystander, elderly, push, shield, shove
 
 id: ut-saltlakecity-1
+
+geolocation: 40.7605681, -111.8848045
 
 **Links**
 
 * https://twitter.com/bubbaprog/status/1266908354821206016
+* https://www.abc4.com/news/top-stories/abc-4-news-captures-police-officer-armed-in-protest-gear-pushing-down-man-with-cane/
+* https://www.abc4.com/news/salt-lake-city-protests/salt-lake-city-officer-who-pushed-down-elderly-man-removed-from-patrol-duties-during-investigation/
 
 
-### Police shoot man on the ground in the spine with a beanbag point-blank | May 30th
+### Police shoot man on the ground in the spine with a beanbag point-blank | 2020-05-30
 
-The man on the ground was shot with a beanbag, resulting in heavy damage.
+A man laying on the ground was shot at close range by an officer with a bean bag round. This occurred as officers were pushing protesters down South 200 East outside the Public Library.
 
-tags: shoot, bean-bag, protester
+tags: bean-bag, less-lethal, protester, shoot
 
 id: ut-saltlakecity-2
+
+geolocation: 40.7600121, -111.8853097
 
 **Links**
 
 * https://www.reddit.com/r/nextfuckinglevel/comments/gtv4co/downtown_salt_lake_city_may_30th_2020_unarmed/
 
 
-### Police shoot tear gas canister at man from close range, striking him in the chest | May 30th
+### Police shoot tear gas canister at man from close range, striking him in the chest | 2020-05-30
 
-Man standing in a crowd of protesters was struck with a tear gas canister.
+Man standing in a crowd of protesters was struck with a tear gas canister. This occurred near the Public Library, at the intersection of South 200 East Street and University Boulevard.
 
-tags: tear-gas, shoot, tear-gas-canister, protester
+tags: less-lethal, protester, shoot, tear-gas, tear-gas-canister
 
 id: ut-saltlakecity-4
+
+geolocation: 40.7605534, -111.8853025
 
 **Links**
 
@@ -63,28 +75,34 @@ id: ut-saltlakecity-4
 * https://www.instagram.com/p/CA148-0B14t6mQZqJZYzwq25KdoPzZ5CJmV3oQ0/
 
 
-### Police push and tackle man that is being vocal | June 1st
+### Police push and tackle man that is being vocal | 2020-06-01
 
 Police seemingly single out a person that is being the most vocal, push and tackle him to the ground despite him not resisting.
 
-tags: push, tackle, arrest, beat, knee, protester
+This occurred near the State Capitol Building at East 300 North Street and North State Street.
+
+tags: arrest, beat, knee, protester, push, tackle
 
 id: ut-saltlakecity-3
+
+geolocation: 40.7757703, -111.888239
 
 **Links**
 
 * https://v.redd.it/fl4y919v1q251
 
 
-### Police beat protesters with shields and batons | July 9th
+### Police beat protesters with shields and batons | 2020-07-09
 
 In the wake of the Salt Lake City DA ruling the killing of [Bernardo Palacios-Carbajal](https://kutv.com/news/local/shooting-of-bernardo-palacios-ruled-justified-by-salt-lake-county-da-07-09-2020) to be justified, protesters took to the streets.
 
 Footage from multiple angles shows police using shields and batons to strike peaceful protesters gathered in the street outside the DA's office.
 
-tags: protester, beat, strike, shield, baton
+tags: baton, beat, protester, shield, strike
 
 id: ut-saltlakecity-5
+
+geolocation: 40.7585004, -111.8894887
 
 **Links**
 
@@ -94,13 +112,15 @@ id: ut-saltlakecity-5
 * https://twitter.com/JoshuaPotash/status/1281434273459900418
 
 
-### Police chase journalist | July 9th
+### Police chase journalist | 2020-07-09
 
 Footage from a protest for Bernardo Palacios-Carbajal shows police chasing down a journalist with a camera mounted on his head. The journalist flees and police give up the chase. The journalist is allegedly affiliated with Just Media Utah
 
-tags: journalist, abuse-of-power
+tags: abuse-of-power, journalist
 
 id: ut-saltlakecity-6
+
+geolocation: 40.7585004, -111.8894887
 
 **Links**
 

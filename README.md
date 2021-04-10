@@ -1,5 +1,15 @@
 
-# Police Brutality During the 2020 George Floyd Protests
+# Police Brutality During US Protests
+
+Visit us at: https://2020pb.com/
+
+### Important Note on Branches
+
+As of September 15th at 3 PM EDT, the default branch is `main`.
+
+Most tools will use the `data_build` branch, which will not be affected by the change.
+
+The `master` branch will no longer be updated. Please update forks off of `master` to reference `main`, rebasing your work off of main if needed.
 
 ---
 
@@ -8,6 +18,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👇🏽 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👇🏾<br/>
 👉🏿 **[Report it here!](https://github.com/2020PB/police-brutality/issues/new?assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE)** 👈🏻<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👆🏼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+Want to report an incident, but don't have a Github account? Send it [here](https://docs.google.com/forms/d/e/1FAIpQLSd33kN_1HqXCc6SSiL2-b1_IkMouM-rIyCbLsQrGpFN4amcAA/viewform)
 
 For more information on contributing to this repository please consult the [contribution guidelines](./CONTRIBUTING.md).
 
@@ -55,7 +67,8 @@ As these protests have continued, hundreds of incidents have been recorded where
 * [Frequently Asked Questions](./CONTRIBUTING.md#Frequently-Asked-Questions)
 * [Building with the API](./docs/building-with-the-api.md)
 * [Raw Video Archive](https://github.com/pb-files/pb-videos)
-* [IPFS Archive](https://gateway.temporal.cloud/ipns/2020pb-archive.temporal.cloud)
+* [S3 Archive](https://s3.console.aws.amazon.com/s3/buckets/2020pb-archive?region=us-east-1&tab=objects)
+* [IPFS Archive - INACTIVE](https://gateway.temporal.cloud/ipns/2020pb-archive.temporal.cloud)
 * **Incident Reports**
   * [Alabama](./reports/Alabama.md)
   * [Arizona](./reports/Arizona.md)
@@ -85,6 +98,7 @@ As these protests have continued, hundreds of incidents have been recorded where
   * [Oklahoma](./reports/Oklahoma.md)
   * [Oregon](./reports/Oregon.md)
   * [Pennsylvania](./reports/Pennsylvania.md)
+  * [Rhode Island](./reports/Rhode%20Island.md)
   * [South Carolina](./reports/South%20Carolina.md)
   * [South Dakota](./reports/South%20Dakota.md)
   * [Tennessee](./reports/Tennessee.md)
@@ -95,4 +109,5 @@ As these protests have continued, hundreds of incidents have been recorded where
   * [Washington](./reports/Washington.md)
   * [Washington D.C.](./reports/Washington%20DC.md)
   * [Wisconsin](./reports/Wisconsin.md)
+  * [Wyoming](./reports/Wyoming.md)
   * [Unknown Location](./reports/Unknown%20Location.md)

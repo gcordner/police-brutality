@@ -1,6 +1,6 @@
 ## Bentonville
 
-### Law enforcement tear-gas a crowd chanting “we want peace” right after exiting the building. | June 1st
+### Law enforcement tear-gas a crowd chanting “we want peace” right after exiting the building. | 2020-06-01
 
 A crowd gathered on the Bentonville Square to protest. Around 9 PM, law enforcement gassed a crowd chanting “we want peace.” Local news says some people were throwing water bottles and firecrackers. Police also claim rocks were thrown. Police claim that at least one police vehicle was damaged. Local news reports vary -- some reports have protesters "kicking" a police vehicle; some televised reports have protesters "damaging" a police vehicle; most written articles merely report that police say protesters damaged a police vehicle.
 
@@ -8,9 +8,11 @@ It is unclear whether any order to disperse was given before the first use of te
 
 Police posted on the City of Bentonville Facebook page that rubber bullets were not used. Police did, in fact, use rubber bullets (per 5 News); per the op ed, the police chief attributed the error to a "communication failure."
 
-tags: tear-gas, tear-gas-canister, rubber-bullet, protester
+tags: less-lethal, protester, rubber-bullet, tear-gas, tear-gas-canister
 
 id: ar-bentonville-1
+
+geolocation: 36.3726466, -94.2106367
 
 **Links**
 
@@ -26,29 +28,32 @@ id: ar-bentonville-1
 
 ## Little Rock
 
-### Protesters tear gas protesters | May 30th
+### Protesters tear gas protesters | 2020-05-30
 
 Protesters gathered on courthouse property during a May 30th protest. Some graffiti can be seen on the courthouse walls. Police deployed tear gas against protesters to push them off the courthouse lawn and into the street, after warning protesters they were not allowed to be on the courthouse lawn. Police continued to deploy tear gas as protesters moved towards Interstate 630, where they blocked the road for some time
 
-tags: protester, tear-gas
+tags: less-lethal, protester, tear-gas
 
 id: ar-littlerock-2
 
+geolocation: 34.7443623, -92.2879971
+
 **Links**
 
-* https://www.youtube.com/watch?v=Pfn65qaXosU
 * https://www.youtube.com/watch?v=p7z-u_a8qo0
 
 
-### Peaceful protesters kneeling are shot with an explosive projectile. | May 31st
+### Peaceful protesters kneeling are shot with an explosive projectile. | 2020-05-31
 
 Peaceful protesters kneeling in the street are shot with an explosive projectile.
 
 Police deployed tear gas to then clear protesters out of the street after deploying an LRAD dispersal function.
 
-tags: explosive, projectile, protester, tear-gas, lrad
+tags: explosive, less-lethal, lrad, projectile, protester, tear-gas
 
 id: ar-littlerock-1
+
+geolocation: 34.746483, -92.2880644
 
 **Links**
 
